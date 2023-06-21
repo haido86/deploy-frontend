@@ -17,7 +17,7 @@ const initialState: ProductState = {
 
 export const fetchProductsThunk = createAsyncThunk('products/fetch', async () => {
   try {
-    const res = await axios.get('http://ec2-35-172-183-28.compute-1.amazonaws.com/api/v1/products')
+    const res = await axios.get('http://ec2-54-210-222-78.compute-1.amazonaws.com/api/v1/products')
     const products = await res.data
     return products
   } catch (error) {
